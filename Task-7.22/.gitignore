@@ -1,0 +1,21 @@
+# Ignore Python related files
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Ignore log files
+*.log
+
+# Ignore Visual Studio Code IDE files
+.vscode/
+
+# Ignore coverage report
+.coverage
+coverage_report/
+
+# Ignore local_config
+local_config.py
+
+# Ignore
+mysql_db/

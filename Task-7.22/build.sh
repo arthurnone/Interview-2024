@@ -1,0 +1,1 @@
+docker buildx build -t task:1.0 .
