@@ -1,0 +1,90 @@
+# See https://help.github.com/articles/ignoring-files for more about ignoring files.
+# See https://git-scm.com/docs/gitignore for more about .gitignore.
+
+# Ignore bundler config.
+**/.bundle
+
+# Ignore the default SQLite database.
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-shm 
+*.sqlite3-wal
+
+# Ignore the default PostgreSQL and MySQL credentials.
+# config/database.yml
+
+# Ignore the default secrets file.
+# config/secrets.yml
+
+# Ignore the Rails 5.2+ master key for decrypting credentials and more.
+# config/master.key
+
+# Ignore uploaded files in development.
+storage/*
+!storage/.keep
+
+# Ignore master key for decrypting credentials and more.
+config/credentials.yml.enc
+
+# Ignore all logfiles and tempfiles.
+log/*
+tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+tmp/pids/*
+!tmp/pids/
+!tmp/pids/.keep
+
+# Ignore uploaded files in development.
+public/system/*
+public/uploads
+
+# Ignore Action Cable files
+storage/*
+!storage/.keep
+
+# Ignore pidfiles and tempfiles.
+tmp/pids
+tmp/cache
+tmp/sockets
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore node_modules
+/node_modules
+/yarn-error.log
+
+# Ignore precompiled assets.
+public/assets
+
+# Ignore the built gem files.
+/*.gem
+*.rbc
+*.sass-cache
+*.turbogems
+*.gemtags
+
+# Ignore node_modules
+node_modules/
+yarn-error.log
+
+# Ignore IDE files
+.idea/
+.project
+.settings/
+.vscode/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore dotenv files
+.env
+.env.*
+
+# Ignore Spring files
+.spring
+.spring/*
