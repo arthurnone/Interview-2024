@@ -7,7 +7,7 @@
 
 This project is developed using Next.js, MUI, and Tailwind CSS. It has been developed responsively, adapting to mobile devices. State management is handled using Context. Unit testing is performed with @testing-library/jest-dom.
 
-The project is deployed at: [https://task-7.25.wangpeifeng.com/](https://task-725.wangpeifeng.com/)
+The project is deployed at: [https://task-725.wangpeifeng.com/](https://task-725.wangpeifeng.com/)
 
 **Features**
 
