@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres
+    container_name: pafindb_postgres
+    environment:
+      POSTGRES_USER: ${DB_USER:-postgres} # Get username from .env file or use default
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres} # Get password from .env file or use default
+      POSTGRES_DB: ${DB_NAME:-pafindb} # Get database name from .env file or use default
+    ports:
+      - "${DB_PORT:-5432}:5432" # Map port for host access
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data # Persistent volume to prevent data loss
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
